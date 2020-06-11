@@ -37,7 +37,7 @@ const LeftMenuLinksSection = ({
 
     return `/plugins/${link.plugin}/${link.destination || link.uid}`;
   };
-  if ( section === 'plugins' && process.env.NODE_ENV == 'development') return null;
+  if ( section === 'plugins' && process.env.NODE_ENV !== 'development') return null;
   return (
     <>
       <LeftMenuLinkHeader
