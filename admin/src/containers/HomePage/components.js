@@ -66,7 +66,7 @@ const Container = styled.div`
 
 const P = styled.p`
 /*max-width: 550px;*/
-  max-width: 1024px;
+  max-width: 100%;
   padding-top: 10px;
   padding-right: 30px;
   color: #5c5f66;

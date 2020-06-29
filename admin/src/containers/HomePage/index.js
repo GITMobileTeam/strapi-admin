@@ -92,7 +92,7 @@ const HomePage = ({ global: { plugins }, history: { push } }) => {
       </FormattedMessage>
       <Container className="container-fluid">
         <div className="row">
-          <div className="col-lg-8 col-md-12">
+          <div className="col-md-12">
             <Block>
               
 
