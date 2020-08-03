@@ -37,7 +37,26 @@ const LeftMenuLinksSection = ({
 
     return `/plugins/${link.plugin}/${link.destination || link.uid}`;
   };
-  if ( section === 'plugins' ) return null;
+    if ( section === 'plugins' ){ 
+    return (
+    <>
+    <LeftMenuLinkHeader
+      section={section}
+      searchable={searchable}
+      setSearch={setSearch}
+      search={search}
+    />
+    <LeftMenuLink
+            location={location}
+            // There is no id or unique value in the link object for the moment.
+            // eslint-disable-next-line react/no-array-index-key
+            key={"1"}
+            iconName={""}
+            label={"Download Bid History"}
+            destination={"https://excelsheetservices-wehxzjtmaq-ew.a.run.app/userBidsSheet/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZGRmNTMwNTdhMTc5Y2JlNWU5MTFhNiIsImlhdCI6MTU5NDAyMDM5MiwiZXhwIjoxNTk2NjEyMzkyfQ.Jc1p_cjAiLVwoX7zBjhuy4b6lreqtjpg_PdrHiXMtcg"}
+        />
+        </>);
+    }
   return (
     <>
       <LeftMenuLinkHeader
