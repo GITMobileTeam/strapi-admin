@@ -83,7 +83,7 @@
     "remove-markdown": "^0.2.2",
     "reselect": "^4.0.0",
     "sanitize.css": "^4.1.0",
-    "shelljs": "^0.7.8",
+    "shelljs": "^0.8.5",
     "strapi-helper-plugin": "3.0.5",
     "strapi-utils": "3.0.5",
     "style-loader": "^0.23.1",
